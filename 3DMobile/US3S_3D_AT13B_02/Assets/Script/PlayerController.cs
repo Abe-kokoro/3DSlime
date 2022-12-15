@@ -37,6 +37,12 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 }
             }
         }
+        if(MinePlayer)
+        {
+            PlayerCurrentHp=MinePlayer.GetComponent<PlayerHpBar>().GetPlayerHP();
+            PlayerMaxHp = MinePlayer.GetComponent<PlayerHpBar>().GetMaxPlayerHP();
+            PlayerHPSlider.value = (float)PlayerCurrentHp / (float)PlayerMaxHp;
+        }
     }
     public void DClicked()
     {
