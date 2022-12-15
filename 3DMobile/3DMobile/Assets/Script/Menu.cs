@@ -19,18 +19,12 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject ResumeButton2;
     //ExitMenu
     [SerializeField] private GameObject ExitPanel;
-<<<<<<< HEAD
     [SerializeField] private GameObject ResumeButton3;
     [SerializeField] private GameObject ExitButton2;
     [SerializeField] private GameObject ExitOkButton;
     [SerializeField] private GameObject ExitNoButton;
 
-=======
-    [SerializeField] private GameObject ExitButton2;
-    [SerializeField] private GameObject ResumeButton3;
-    [SerializeField] private GameObject ExitCancelButton;
-    [SerializeField] private GameObject ExitTrueButton;
->>>>>>> UI_Work
+
     void Start()
     {
         pausePanel.SetActive(false);
@@ -45,28 +39,20 @@ public class Menu : MonoBehaviour
         ExitPanel.SetActive(false);
         pauseButton.GetComponent<Button>().onClick.AddListener(Pause);
         resumeButton.GetComponent<Button>().onClick.AddListener(Resume);
-<<<<<<< HEAD
+
        SettingsButton.GetComponent<Button>().onClick.AddListener(SettingsMenu);
-=======
-        //SettingMenu
-        SettingsButton.GetComponent<Button>().onClick.AddListener(SettingsMenu);
->>>>>>> UI_Work
+
         SettingsExitButton.GetComponent<Button>().onClick.AddListener(SettingsExit);
         ResumeButton2.GetComponent<Button>().onClick.AddListener(SettingsExit);
         //ExitMenu
         ExitButton.GetComponent<Button>().onClick.AddListener(ExitMenu);
         ExitButton2.GetComponent<Button>().onClick.AddListener(ExitMenuExit);
         ResumeButton3.GetComponent<Button>().onClick.AddListener(ExitMenuExit);
-<<<<<<< HEAD
+
         ExitNoButton.GetComponent<Button>().onClick.AddListener(ExitMenuExit);
         ExitOkButton.GetComponent<Button>().onClick.AddListener(ExitGame);
-
-=======
-        ExitCancelButton.GetComponent<Button>().onClick.AddListener(ExitMenuExit);
-        ExitTrueButton.GetComponent<Button>().onClick.AddListener(ExitGame);
->>>>>>> UI_Work
-        HintButton.GetComponent<Button>().onClick.AddListener(HintoMenu);
-        MapButton.GetComponent<Button>().onClick.AddListener(MapView);
+        
+     
     }
 
     private void Pause()
@@ -109,11 +95,9 @@ public class Menu : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;//ゲームプレイ終了
 #else
-<<<<<<< HEAD
+
     Application.Quit();//ゲームプレイ終了
-=======
-        Application.Quit();//ゲームプレイ終了
->>>>>>> UI_Work
+
 #endif
     }
 
