@@ -1,0 +1,9 @@
+diff a/3DMobile/3DMobile/.gitignore b/3DMobile/3DMobile/.gitignore	(rejected hunks)
+@@ -57,5 +57,6 @@
+ 
+ # Crashlytics generated file
+ crashlytics-build.properties
+-#2022/12/15 自分で追加、フォントファイルをバージョン管理しない
++
++#2022/12/15フォントファイルが100MBを超えたのでバージョン管理から除外
+ Fonts
