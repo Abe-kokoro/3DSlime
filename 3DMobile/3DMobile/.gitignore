@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+#2022/12/15フォントファイルが100MBを超えたのでバージョン管理から除外
+Fonts
